@@ -1,0 +1,88 @@
+
+# =========================================================================== #
+# Training | Evaluation flags:
+# =========================================================================== #
+{'adadelta_rho': <absl.flags._flag.Flag object at 0x7fc9428a3b38>,
+ 'adagrad_initial_accumulator_value': <absl.flags._flag.Flag object at 0x7fc9428a3be0>,
+ 'adam_beta1': <absl.flags._flag.Flag object at 0x7fc9428a3c88>,
+ 'adam_beta2': <absl.flags._flag.Flag object at 0x7fc9428a3d30>,
+ 'batch_size': <absl.flags._flag.Flag object at 0x7fc9428a9b38>,
+ 'checkpoint_exclude_scopes': <absl.flags._flag.Flag object at 0x7fc9428a9da0>,
+ 'checkpoint_model_scope': <absl.flags._flag.Flag object at 0x7fc9428a9d30>,
+ 'checkpoint_path': <absl.flags._flag.Flag object at 0x7fc9428a9cc0>,
+ 'clone_on_cpu': <absl.flags._flag.BooleanFlag object at 0x7fc9428a3518>,
+ 'dataset_dir': <absl.flags._flag.Flag object at 0x7fc9428a9908>,
+ 'dataset_name': <absl.flags._flag.Flag object at 0x7fc9428a9748>,
+ 'dataset_split_name': <absl.flags._flag.Flag object at 0x7fc9428a9860>,
+ 'end_learning_rate': <absl.flags._flag.Flag object at 0x7fc9428a9470>,
+ 'ftrl_initial_accumulator_value': <absl.flags._flag.Flag object at 0x7fc9428a3f28>,
+ 'ftrl_l1': <absl.flags._flag.Flag object at 0x7fc9428a3fd0>,
+ 'ftrl_l2': <absl.flags._flag.Flag object at 0x7fc9428a90b8>,
+ 'ftrl_learning_rate_power': <absl.flags._flag.Flag object at 0x7fc9428a3e80>,
+ 'gpu_memory_fraction': <absl.flags._flag.Flag object at 0x7fc9428a3978>,
+ 'h': <tensorflow.python.platform.app._HelpFlag object at 0x7fc9428a9eb8>,
+ 'help': <tensorflow.python.platform.app._HelpFlag object at 0x7fc9428a9eb8>,
+ 'helpfull': <tensorflow.python.platform.app._HelpfullFlag object at 0x7fc9428a9f28>,
+ 'helpshort': <tensorflow.python.platform.app._HelpshortFlag object at 0x7fc9428a9f98>,
+ 'ignore_missing_vars': <absl.flags._flag.BooleanFlag object at 0x7fc9428a9e48>,
+ 'label_smoothing': <absl.flags._flag.Flag object at 0x7fc9428a94e0>,
+ 'labels_offset': <absl.flags._flag.Flag object at 0x7fc9428a99b0>,
+ 'learning_rate': <absl.flags._flag.Flag object at 0x7fc9428a93c8>,
+ 'learning_rate_decay_factor': <absl.flags._flag.Flag object at 0x7fc9428a9588>,
+ 'learning_rate_decay_type': <absl.flags._flag.Flag object at 0x7fc9428a9358>,
+ 'log_every_n_steps': <absl.flags._flag.Flag object at 0x7fc9428a3780>,
+ 'loss_alpha': <absl.flags._flag.Flag object at 0x7fc97ae1e630>,
+ 'match_threshold': <absl.flags._flag.Flag object at 0x7fc9428a3390>,
+ 'max_number_of_steps': <absl.flags._flag.Flag object at 0x7fc9428a9c50>,
+ 'model_name': <absl.flags._flag.Flag object at 0x7fc9428a9a58>,
+ 'momentum': <absl.flags._flag.Flag object at 0x7fc9428a9160>,
+ 'moving_average_decay': <absl.flags._flag.Flag object at 0x7fc9428a96d8>,
+ 'negative_ratio': <absl.flags._flag.Flag object at 0x7fc9428a32e8>,
+ 'num_classes': <absl.flags._flag.Flag object at 0x7fc9428a97b8>,
+ 'num_clones': <absl.flags._flag.Flag object at 0x7fc9428a34e0>,
+ 'num_epochs_per_decay': <absl.flags._flag.Flag object at 0x7fc9428a9630>,
+ 'num_preprocessing_threads': <absl.flags._flag.Flag object at 0x7fc9428a36d8>,
+ 'num_readers': <absl.flags._flag.Flag object at 0x7fc9428a3630>,
+ 'opt_epsilon': <absl.flags._flag.Flag object at 0x7fc9428a3dd8>,
+ 'optimizer': <absl.flags._flag.Flag object at 0x7fc9428a3ac8>,
+ 'preprocessing_name': <absl.flags._flag.Flag object at 0x7fc9428a9ac8>,
+ 'rmsprop_decay': <absl.flags._flag.Flag object at 0x7fc9428a92b0>,
+ 'rmsprop_momentum': <absl.flags._flag.Flag object at 0x7fc9428a9208>,
+ 'save_interval_secs': <absl.flags._flag.Flag object at 0x7fc9428a38d0>,
+ 'save_summaries_secs': <absl.flags._flag.Flag object at 0x7fc9428a3828>,
+ 'train_dir': <absl.flags._flag.Flag object at 0x7fc9428a3438>,
+ 'train_image_size': <absl.flags._flag.Flag object at 0x7fc9428a9be0>,
+ 'trainable_scopes': <absl.flags._flag.Flag object at 0x7fc9428a9e10>,
+ 'weight_decay': <absl.flags._flag.Flag object at 0x7fc9428a3a20>}
+
+# =========================================================================== #
+# SSD net parameters:
+# =========================================================================== #
+{'anchor_offset': 0.5,
+ 'anchor_ratios': [[2, 0.5],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5],
+                   [2, 0.5]],
+ 'anchor_size_bounds': [0.15, 0.9],
+ 'anchor_sizes': [(21.0, 45.0),
+                  (45.0, 99.0),
+                  (99.0, 153.0),
+                  (153.0, 207.0),
+                  (207.0, 261.0),
+                  (261.0, 315.0)],
+ 'anchor_steps': [8, 16, 32, 64, 100, 300],
+ 'feat_layers': ['block4', 'block7', 'block8', 'block9', 'block10', 'block11'],
+ 'feat_shapes': [(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
+ 'img_shape': (300, 300),
+ 'no_annotation_label': 21,
+ 'normalizations': [20, -1, -1, -1, -1, -1],
+ 'num_classes': 21,
+ 'prior_scaling': [0.1, 0.1, 0.2, 0.2]}
+
+# =========================================================================== #
+# Training | Evaluation dataset files:
+# =========================================================================== #
+['./voc_train_000.tfrecord']
+
